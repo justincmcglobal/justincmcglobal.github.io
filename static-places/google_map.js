@@ -9,18 +9,32 @@ function initMap() {
     streetViewControl: false,
     mapTypeControl: false
   });
-  
-  placeMarker({ lat: 21.0167904, lng: 105.7819856 });
-  geocodeAddress(marker.position);
-  map.panTo(marker.position);
-  markers.push(marker);
 
+  var directionsService = new google.maps.DirectionsService();
+  var directionsDisplay = new google.maps.DirectionsRenderer();
+  directionsDisplay.setMap(map);
+  directionsDisplay.setPanel(document.getElementById('panel'));
+  var request = {
+    origin: 'Yên Hòa',
+    destination: 'Thanh Xuân',
+    travelMode: google.maps.DirectionsTravelMode.DRIVING
+  };
+  directionsService.route(request, function(response, status) {
+    console.log("Route: ",response);
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(response);
+    }
+  });
+  
   map.addListener("click", function(e) {
+    console.log("Origin: ",e.latLng)
     clearMarkers();
     placeMarker(e.latLng);
-    geocodeAddress(e.latLng);
+    // geocodeAddress(e.latLng);
     map.panTo(marker.position);
     markers.push(marker);
+    console.log("Destination: ",e.latLng)
+  
   });
 
   createInfoWindow();

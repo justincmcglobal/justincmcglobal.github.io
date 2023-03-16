@@ -56,7 +56,7 @@ var setModel = function (model, entity) {
     }
 
     entity.setAttribute('gltf-model', model.url);
-
+    entity.setAttribute('title',"Test AR");
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
 };
