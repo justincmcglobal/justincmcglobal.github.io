@@ -15,6 +15,8 @@ function staticLoadPlaces() {
                 // decomment the following and add coordinates:
                 // lat: <your-latitude>,
                 // lng: <your-longitude>,
+                lat: 44.4908615,
+                 lng: 11.3326416,
             },
         },
     ];
@@ -22,10 +24,16 @@ function staticLoadPlaces() {
 
 var models = [
     {
+        url: './assets/arrow/scene.gltf',
+       scale: '0.05 0.05 0.05',
+       info: 'Magnemite, Lv. 5, HP 10/10',
+       rotation: '0 45 0',
+   },
+    {
          url: './assets/magnemite/scene.gltf',
-        scale: '0.5 0.5 0.5',
+        scale: '0.01 0.01 0.01',
         info: 'Magnemite, Lv. 5, HP 10/10',
-        rotation: '0 180 0',
+        rotation: '0 45 0',
     },
     {
          url: './assets/articuno/scene.gltf',
@@ -39,6 +47,7 @@ var models = [
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
     },
+
 ];
 
 var modelIndex = 0;
