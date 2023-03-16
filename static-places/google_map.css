@@ -4,8 +4,7 @@
 
  #map {
     height: 50%;
-    width: 100%;
-    background-color: blue;
+    width: 400px;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
   }
