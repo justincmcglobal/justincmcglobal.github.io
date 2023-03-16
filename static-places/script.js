@@ -56,7 +56,7 @@ var setModel = function (model, entity) {
     }
 
     entity.setAttribute('gltf-model', model.url);
-    entity.setAttribute('title',"Test AR");
+    entity.setAttribute('text',"value", "Hello word");
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
 };
@@ -70,7 +70,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-
+        model.setAttribute('text',"value", "Hello word")
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
