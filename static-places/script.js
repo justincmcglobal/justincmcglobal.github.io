@@ -4,7 +4,7 @@ window.onload = () => {
     button.innerText = '﹖';
 
     let places = staticLoadPlaces();
-    renderPlaces(places);
+    // renderPlaces(places);
 };
 
 function staticLoadPlaces() {
