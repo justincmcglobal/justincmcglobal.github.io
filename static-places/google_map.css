@@ -6,10 +6,22 @@
   width: 100%;
   background-color:yellow;
  }
- #map {
+ /* #map {
     height: 400px;
     width: 100%;
     background-color: blue;
+  } */
+  #map{
+    height: 50%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
   }
   /* Optional: Makes the sample page fill the window. */
   html, body {
