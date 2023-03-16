@@ -6,9 +6,7 @@
     height: 40%;
     width: 100%;
     border-radius: 70% 70% 0 0 ;
-    display:flex;
     z-index: 1;
-    bottom: 0;
     /* border-top-right-radius: 50%;
     border-top-left-radius: 50%; */
   }
