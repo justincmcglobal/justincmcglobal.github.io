@@ -42,7 +42,7 @@ var models = [
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
-        position: '0 20 0'
+        position: '0 3.0 0'
     },
 
 ];
