@@ -4,11 +4,16 @@
 
  #map {
     height: 50%;
-    width: 400px;
+    width: 100%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
   }
- 
+ /* #googleMap{
+    height: 50%;
+    width: 400px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+ } */
   /* Optional: Makes the sample page fill the window. */
   html, body {
     height: 100%;
