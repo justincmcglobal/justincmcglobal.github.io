@@ -6,6 +6,8 @@
     height: 50%;
     width: 100%;
     background-color: blue;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
   }
  
   /* Optional: Makes the sample page fill the window. */
