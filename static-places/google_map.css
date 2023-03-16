@@ -3,7 +3,7 @@
  * element that contains the map. */
 
  #map {
-    height: 30%;
+    height: 40%;
     width: 100%;
     border-radius: 70% 70% 0 0 ;
     display:flex;
