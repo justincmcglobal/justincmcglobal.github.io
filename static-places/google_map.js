@@ -7,7 +7,7 @@ function initMap() {
     zoom: 15,
     center: { lat: 21.0167904, lng: 105.7819856 },
     streetViewControl: false,
-    mapTypeControl: false
+    mapTypeControl: false,
   });
 
   var directionsService = new google.maps.DirectionsService();
